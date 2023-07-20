@@ -4,12 +4,20 @@ export const Mainvisual = () => {
   return (
     <Box className="Mainvisual" sx={sx}>
       <Box className="Box1">
-        <Link href="#" className="Box">今日</Link>
-        <Link href="#" className="Box">日時指定</Link>
+        <Link href="/today" className="Link">
+          <Box className="Box">今日</Box>
+        </Link>
+        <Link href="/date" className="Link">
+          <Box className="Box">日時指定</Box>
+        </Link>
       </Box>
       <Box className="Box2">
-        <Link href="#" className="Box">全て</Link>
-        <Link href="#" className="Box">実行済み</Link>
+        <Link href="all" className="Link">
+          <Box className="Box">全て</Box>
+        </Link>
+        <Link href="end" className="Link">
+          <Box className="Box">実行済み</Box>
+        </Link>
       </Box>
     </Box>
   );
@@ -18,6 +26,7 @@ export const Mainvisual = () => {
 const sx: SxProps<Theme> = {
   "&.Mainvisual" : {
     width: "100%",
+    backgroundColor: "#f5f5f5"
   },
   ".Box1" : {
     display: "flex",
@@ -35,26 +44,30 @@ const sx: SxProps<Theme> = {
       xs: "10px",
     },
   },
-  ".Box" : {
+  ".Link" : {
     width: "300px",
-    backgroundColor: "#e0ffff",
-    paddingBottom: {
+    height: {
       md: "150px",
-      xs: "80px",
+      xs: "90px",
     },
+    backgroundColor: "#fff",
+    color: "#000",
+    fontWeight: "600",
+    textDecoration: "none",
     margin: {
       md: "30px",
-      xs: "10px",
+      xs: "10px ",
     },
     display: "flex",
-    justifyContent :"center",
-    alignItems: "center",
-    // textAlign: "center",
-    // verticalAlign: "middle",
+    justifyContent :"left",
+    alignItems: "end",
     borderRadius: "10px",
     fontSize: {
       md: "25px",
       xs: "15px",
     },
-  }
+  },
+  ".Box" : {
+    margin: "0 0 14px 20px",
+  },
 };
