@@ -30,7 +30,7 @@ const sx: SxProps<Theme> = {
   },
   ".Box1" : {
     display: "flex",
-    // justifyContent: "center",
+    justifyContent: "center",
     padding: {
       md: "20px",
       xs: "10px",
@@ -38,7 +38,7 @@ const sx: SxProps<Theme> = {
   },
   ".Box2" : {
     display: "flex",
-    // justifyContent: "center",
+    justifyContent: "center",
     padding: {
       md: "20px",
       xs: "10px",
